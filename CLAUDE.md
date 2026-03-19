@@ -12,5 +12,5 @@ This plugin integrates Slack with Claude Code, providing tools to search, read, 
 
 ## Skills
 
-- **slack-messaging** — Guidance for composing well-formatted Slack messages using mrkdwn syntax
+- **slack-messaging** — Guidance for composing well-formatted Slack messages using standard markdown
 - **slack-search** — Guidance for effectively searching Slack to find messages, files, channels, and people

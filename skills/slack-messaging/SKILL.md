@@ -1,5 +1,5 @@
 ---
-description: Guidance for composing well-formatted, effective Slack messages using mrkdwn syntax
+description: Guidance for composing well-formatted, effective Slack messages using standard markdown
 ---
 
 # Slack Messaging Best Practices
@@ -10,30 +10,21 @@ This skill provides guidance for composing well-formatted, effective Slack messa
 
 Apply this skill whenever composing, drafting, or helping the user write a Slack message — including when using `slack_send_message`, `slack_send_message_draft`, or `slack_create_canvas`.
 
-## Slack Formatting (mrkdwn)
+## Formatting
 
-Slack uses its own markup syntax called **mrkdwn**, which differs from standard Markdown. Always use mrkdwn when composing Slack messages:
+Slack MCP accepts standard markdown. Use familiar markdown syntax when composing messages:
 
-| Format | Syntax | Notes |
-|--------|--------|-------|
-| Bold | `*text*` | Single asterisks, NOT double |
-| Italic | `_text_` | Underscores |
-| Strikethrough | `~text~` | Tildes |
-| Code (inline) | `` `code` `` | Backticks |
-| Code block | `` ```code``` `` | Triple backticks |
-| Quote | `> text` | Angle bracket |
-| Link | `<url\|display text>` | Pipe-separated in angle brackets |
-| User mention | `<@U123456>` | User ID in angle brackets |
-| Channel mention | `<#C123456>` | Channel ID in angle brackets |
-| Bulleted list | `- item` or `• item` | Dash or bullet character |
-| Numbered list | `1. item` | Number followed by period |
-
-### Common Mistakes to Avoid
-
-- Do NOT use `**bold**` (double asterisks) — Slack uses `*bold*` (single asterisks)
-- Do NOT use `## headers` — Slack does not support Markdown headers. Use `*bold text*` on its own line instead.
-- Do NOT use `[text](url)` for links — Slack uses `<url|text>` format
-- Do NOT use `---` for horizontal rules — Slack does not render these
+| Format | Syntax |
+|--------|--------|
+| Bold | `**text**` |
+| Italic | `_text_` or `*text*` |
+| Strikethrough | `~text~` |
+| Code (inline) | `` `code` `` |
+| Code block | `` ```code``` `` |
+| Quote | `> text` |
+| Link | `[display text](url)` |
+| Bulleted list | `- item` |
+| Numbered list | `1. item` |
 
 ## Message Structure Guidelines
 
